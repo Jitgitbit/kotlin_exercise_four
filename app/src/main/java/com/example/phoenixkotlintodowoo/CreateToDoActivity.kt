@@ -23,6 +23,8 @@ class CreateToDoActivity : AppCompatActivity() {
             todos?.add(title)
 
             prefs.edit().putStringSet("todostrings",todos).apply()
+
+            finish()
         }
     }
 }
