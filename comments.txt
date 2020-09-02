@@ -46,3 +46,8 @@ git add .
 git commit -m 'saving data in the shared preferences'
 git push origin
 gst
+
+git add .
+git commit -m 'saving data in the shared preferences, now obligatory to use safe calls!'
+git push origin
+gst

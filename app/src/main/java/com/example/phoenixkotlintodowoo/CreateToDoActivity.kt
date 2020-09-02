@@ -19,8 +19,8 @@ class CreateToDoActivity : AppCompatActivity() {
             }
 
             var prefs = getSharedPreferences("com.example.phoenixkotlintodowoo.sharedprefs", Context.MODE_PRIVATE)
-            var todos = prefs.getStringSet("todostrings",setOf()).toMutableSet()
-            todos.add(title)
+            var todos = prefs.getStringSet("todostrings",setOf())?.toMutableSet()
+            todos?.add(title)
 
             prefs.edit().putStringSet("todostrings",todos).apply()
         }
