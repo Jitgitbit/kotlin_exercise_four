@@ -9,3 +9,10 @@ git add .
 git commit -m 'second (includes .idea/vcs.xml)'
 git push origin
 gst
+
+git add .
+git commit -m 'version control up to Pie, and from v 15'
+git push origin
+gst
+
+(don't forget to sync in Android Studio!)
