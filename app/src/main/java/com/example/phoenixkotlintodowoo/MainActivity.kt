@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
             val intent = Intent(this,CreateToDoActivity::class.java)
+            startActivity(intent)
         }
     }
 

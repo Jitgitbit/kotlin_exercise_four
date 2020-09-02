@@ -26,3 +26,8 @@ git add .
 git commit -m 'new intent made'
 git push origin
 gst
+
+git add .
+git commit -m 'create to do design'
+git push origin
+gst
