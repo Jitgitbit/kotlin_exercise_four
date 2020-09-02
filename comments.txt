@@ -36,3 +36,8 @@ git add .
 git commit -m 'title works'
 git push origin
 gst
+
+git add .
+git commit -m 'making sure only this app can access these preferences'
+git push origin
+gst

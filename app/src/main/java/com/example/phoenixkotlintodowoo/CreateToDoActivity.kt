@@ -1,5 +1,6 @@
 package com.example.phoenixkotlintodowoo
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_create_to_do.*
@@ -16,6 +17,8 @@ class CreateToDoActivity : AppCompatActivity() {
             } else {
                 title = titleEditText.text.toString()
             }
+
+            var prefs = getSharedPreferences("com.example.phoenixkotlintodowoo.sharedprefs", Context.MODE_PRIVATE)
         }
     }
 }
