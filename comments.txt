@@ -1,0 +1,11 @@
+git init
+git add .
+git commit -m 'first'
+gst
+git remote add origin https://github.com/Jitgitbit/kotlin_exercise_four.git
+git push -u origin master
+gst
+git add .
+git commit -m 'second (includes .idea/vcs.xml)'
+git push origin
+gst
