@@ -16,3 +16,8 @@ git push origin
 gst
 
 (don't forget to sync in Android Studio!)
+
+git add .
+git commit -m 'CreateToDoActivity made'
+git push origin
+gst
