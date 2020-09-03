@@ -1,11 +1,25 @@
 package com.example.phoenixkotlintodowoo
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.todo_row.view.*
 
 class ToDoAdapter(val todos: List<String>): RecyclerView.Adapter<ToDoAdapter.ToDoHolder>() {
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ToDoHolder {
+        return ToDoHolder(LayoutInflater.from(parent.context).inflate(R.layout.todo_row, parent, false))
+    }
+
+    override fun onBindViewHolder(holder: ToDoHolder, position: Int) {
+        val title = todos[position]
+        holder.bindToDo(title)
+    }
+
+    override fun getItemCount(): Int {
+        return todos.count()
+    }
 
     class ToDoHolder(v: View): RecyclerView.ViewHolder(v), View.OnClickListener {
 
@@ -24,17 +38,5 @@ class ToDoAdapter(val todos: List<String>): RecyclerView.Adapter<ToDoAdapter.ToD
         override fun onClick(v: View?) {
             TODO("Not yet implemented")
         }
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ToDoHolder {
-        TODO("Not yet implemented")
-    }
-
-    override fun onBindViewHolder(holder: ToDoHolder, position: Int) {
-        TODO("Not yet implemented")
-    }
-
-    override fun getItemCount(): Int {
-        TODO("Not yet implemented")
     }
 }

@@ -32,9 +32,11 @@ class MainActivity : AppCompatActivity() {
 
         var prefs = getSharedPreferences(getString(R.string.SHARED_PREF_NAME), Context.MODE_PRIVATE)
         var todos = prefs.getStringSet(getString(R.string.TODO_STRINGS),setOf())?.toMutableSet()
-        println(todos)
-        recyclerView.layoutManager
-        recyclerView.adapter
+
+        layoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = layoutManager
+        adapter = ToDoAdapter(todos.toList())
+        recyclerView.adapter = adapter
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

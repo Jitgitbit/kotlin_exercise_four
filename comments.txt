@@ -91,3 +91,8 @@ git add .
 git commit -m 'required members implemented'
 git push origin
 gst
+
+git add .
+git commit -m 'layoutManager and adapter identified for MainActivity'
+git push origin
+gst
