@@ -76,3 +76,8 @@ git add .
 git commit -m 'layout added'
 git push origin
 gst
+
+git add .
+git commit -m 'title added to adapter'
+git push origin
+gst
