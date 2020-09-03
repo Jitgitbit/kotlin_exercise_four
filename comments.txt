@@ -56,3 +56,8 @@ git add .
 git commit -m 'all you need to add in the code to revert to the previous activity! lol'
 git push origin
 gst
+
+git add .
+git commit -m 'Pulling Data From Shared Preferences (check it in Logcat of Android Studio'
+git push origin
+gst
