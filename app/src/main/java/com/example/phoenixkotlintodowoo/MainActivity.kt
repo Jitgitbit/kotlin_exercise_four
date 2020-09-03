@@ -35,7 +35,9 @@ class MainActivity : AppCompatActivity() {
 
         layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
-        adapter = ToDoAdapter(todos.toList())
+        if (todos != null) {
+            adapter = ToDoAdapter(todos.toList())
+        }
         recyclerView.adapter = adapter
     }
 

@@ -96,3 +96,8 @@ git add .
 git commit -m 'layoutManager and adapter identified for MainActivity'
 git push origin
 gst
+
+git add .
+git commit -m 'Surround with null check for safety'
+git push origin
+gst
