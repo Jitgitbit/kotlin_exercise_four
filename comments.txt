@@ -58,6 +58,11 @@ git push origin
 gst
 
 git add .
-git commit -m 'Pulling Data From Shared Preferences (check it in Logcat of Android Studio'
+git commit -m 'Pulling Data From Shared Preferences (check it in Logcat of Android Studio)'
+git push origin
+gst
+
+git add .
+git commit -m 'Just a little trick to avoid typo'
 git push origin
 gst
