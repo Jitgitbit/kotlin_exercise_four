@@ -8,8 +8,13 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var layoutManager: LinearLayoutManager
+    lateinit var adapter: ToDoAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +33,8 @@ class MainActivity : AppCompatActivity() {
         var prefs = getSharedPreferences(getString(R.string.SHARED_PREF_NAME), Context.MODE_PRIVATE)
         var todos = prefs.getStringSet(getString(R.string.TODO_STRINGS),setOf())?.toMutableSet()
         println(todos)
+        recyclerView.layoutManager
+        recyclerView.adapter
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

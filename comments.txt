@@ -66,3 +66,8 @@ git add .
 git commit -m 'Just a little trick to avoid typo'
 git push origin
 gst
+
+git add .
+git commit -m 'started on adapter'
+git push origin
+gst
