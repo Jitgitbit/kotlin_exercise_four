@@ -111,3 +111,8 @@ git add .
 git commit -m 'the (hamburger)menu is now operational'
 git push origin
 gst
+
+git add .
+git commit -m 'changed the colors'
+git push origin
+gst

@@ -2,6 +2,7 @@ package com.example.phoenixkotlintodowoo
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
@@ -20,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
+
+        window.decorView.setBackgroundColor(Color.BLACK)
 
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
             val intent = Intent(this,CreateToDoActivity::class.java)
