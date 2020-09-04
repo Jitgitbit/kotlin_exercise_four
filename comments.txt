@@ -121,3 +121,14 @@ git add .
 git commit -m 'changed the colors bis'
 git push origin
 gst
+
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+This application is written in Kotlin for Android 15 - 29. It is a very basic but functional tool for your daily activities. Keep your life organized with this simple app.
+
+Some icons and images here will seem out of place. They are, I haven't yet found an efficient way to produce images and icons myself. So for now, I'm just trying to fill in the demanding requirements for google play publishment by downloading the right type and size images online, regardless of the content. I'm already happy if at some point I finally find one that get's accepted. lol
+
+git add .
+git commit -m 'app icon added'
+git push origin
+gst
