@@ -132,3 +132,8 @@ git add .
 git commit -m 'app icon added'
 git push origin
 gst
+
+git add .
+git commit -m 'generated signed apk'
+git push origin
+gst
